@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Newseum App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"> 
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="main.css">  <link rel="stylesheet" type="text/css" href="sidebar.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+
+</head>
+
+<body>
+   
+    <div class="wrapper">
+
+      
+
+        <div id="player-bar" class="info">
+            <div class="card-3" style="text-align: center;">
+                <div class="audio-progress-bar" style="height:5px; background-color:purple; width:100%; position:absolute; top:0;left:0;"></div>
+                <div style="display:inline-block;">
+                    <img src="images/sample-3.jpg" style="height:75px;float:left; margin-left:2rem; margin-right: 2rem;" alt="">
+                        <div style="float:left; text-align: left; margin-left:2rem;margin-right: 12rem; height:75px;">
+                            <div style="position: relative; top: 50%;transform: translateY(-50%);">
+                                <div class="news-headline-player-bar" style="font-size: 1.25rem;">This is the sample content, isnt it?</div>
+                                <div class="news-publisher-player-bar" style="font-size: 0.65rem;">More sample content.</div>
+                            </div>
+                        </div>
+    
+    
+    
+    
+                        <div style="float:left;height: 75px;">
+                            <div style="position: relative; top: 50%;transform: translateY(-50%);">
+                                <img src="images/prev.png" alt="" style="margin:1rem; width:36px;">
+                                    <img id="play-button" src="images/play.png" alt="" style="margin:1rem; width:40px;">
+                                        <img style="display:none; " id="pause-button" src="images/pause.png" alt="">
+                                            <img src="images/next.png" alt="" style="margin:1rem; width:36px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3 style="color:#5c4bf2;">NEWSEUM</h3>
+                <strong>N</strong>
+            </div>
+           <ul class="list-unstyled components">
+              <li class="active nav-item"> <a href="#"><i class="fas fa-adjust"></i> Home</a></li>
+
+                <li class="nav-item"> <a href="#"><i class="fas fa-adjust"></i> Playlist</a></li>
+                <li class="nav-item"> <a href="#"><i class="fas fa-adjust"></i> About</a></li>
+
+               
+            </ul>
+        </nav>
+
+  <div class="container">
+
+
+
+<!-- 
+
+
+    <section>
+      <button id="load">1 </button>
+      <button id="play">2 </button>
+      <button id="pause">3 </button>
+
+      <input type="text" id="text">
+    </section> -->
+
+      <div class="row" style="margin-top:10rem;">
+
+</div>
+
+
+<h1 style="font-size:1.5rem;">TOP STORIES</h1>
+    <div class="row news-album-container">
+   
+            <div class="col-md-3">
+                    <div class="news-album-cover-container" style="background-color:#fff;">
+                        <div style="padding:15px;">
+                      <img class="news-album" src="images/news-album-4_1.png" alt="Avatar" class="image">
+                      <div class="news-album-overlay play-cover-button" id="home">
+                        <img class="news-album-overlay-content play-cover-button" id="home" src="images/play.png" alt="" style="">
+                      </div></div>
+                    </div>
+                       <p class="news-album-cover-text" style="">Home</p>
+                  </div> 
+                  <div class="col-md-3">
+                        <div class="news-album-cover-container" style="background-color:#fff;">
+                            <div style="padding:15px;">
+                          <img class="news-album" src="images/news-album-4_2.png" alt="Avatar" class="image">
+                          <div class="news-album-overlay play-cover-button" id="home">
+                            <img class="news-album-overlay-content play-cover-button" id="home" src="images/play.png" alt="" style="">
+                          </div></div>
+                        </div>
+                           <p class="news-album-cover-text" style="">Sports</p>
+                      </div> 
+                      <div class="col-md-3">
+                            <div class="news-album-cover-container" style="background-color:#fff;">
+                                <div style="padding:15px;">
+                              <img class="news-album" src="images/news-album-4_3.png" alt="Avatar" class="image">
+                              <div class="news-album-overlay play-cover-button" id="home">
+                                <img class="news-album-overlay-content play-cover-button" id="home" src="images/play.png" alt="" style="">
+                              </div></div>
+                            </div>
+                               <p class="news-album-cover-text" style="">Science</p>
+                          </div> 
+                          <div class="col-md-3">
+                                <div class="news-album-cover-container" style="background-color:#fff;">
+                                    <div style="padding:15px;">
+                                  <img class="news-album" src="images/news-album-4_2.png" alt="Avatar" class="image">
+                                  <div class="news-album-overlay play-cover-button" id="home">
+                                    <img class="news-album-overlay-content play-cover-button" id="home" src="images/play.png" alt="" style="">
+                                  </div></div>
+                                </div>
+                                   <p class="news-album-cover-text" style="">Tech</p>
+                              </div> 
+      
+    </div>
+
+<hr>
+
+
+<h1 style="font-size:1.5rem;">RECOMMENDED FOR YOU</h1>
+
+ <div class="row news-album-container">
+   
+      <div class="col-md-3">
+            <div class="news-album-cover-container" style="background-color:#fff;">
+                    <div style="padding:15px;">
+          <img class="news-album" src="images/news-album-home.png" style="" alt="Avatar" class="image">
+          <div class="news-album-overlay play-cover-button" id="home">
+            <img class="news-album-overlay-content play-cover-button" id="home" src="images/play.png" alt="" style="">
+          </div>
+        </div>  </div>
+        <p class="news-album-cover-text" style="">Tech</p>
+      </div> 
+      <div class="col-md-3">
+            <div class="news-album-cover-container" style="background-color:#fff;">
+                    <div style="padding:15px;">
+          <img class="news-album" src="images/news-album-tech.png" style="" alt="Avatar" class="image">
+          <div class="news-album-overlay play-cover-button" id="home">
+            <img class="news-album-overlay-content play-cover-button" id="home" src="images/play.png" alt="" style="">
+          </div>
+        </div>  </div>
+        <p class="news-album-cover-text" style="">Tech</p>
+      </div> 
+      <div class="col-md-3">
+            <div class="news-album-cover-container" style="background-color:#fff;">
+                    <div style="padding:15px;">
+          <img class="news-album" src="images/news-album-science.png" style="" alt="Avatar" class="image">
+          <div class="news-album-overlay play-cover-button" id="home">
+            <img class="news-album-overlay-content play-cover-button" id="home" src="images/play.png" alt="" style="">
+          </div>
+        </div>  </div>
+        <p class="news-album-cover-text" style="">Tech</p>
+      </div> 
+      <div class="col-md-3">
+            <div class="news-album-cover-container" style="background-color:#fff;">
+                    <div style="padding:15px;">
+          <img class="news-album" src="images/news-album-sports.png" style="" alt="Avatar" class="image">
+          <div class="news-album-overlay play-cover-button" id="home">
+            <img class="news-album-overlay-content play-cover-button" id="home" src="images/play.png" alt="" style="">
+          </div>
+        </div>  </div>
+        <p class="news-album-cover-text" style="">Tech</p>
+      </div> 
+
+    </div>   
+  
+  
+  
+
+  
+
+  
+  </div>
+  
+
+
+    
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="bower_components/watson-speech/dist/watson-speech.js"></script>
+  <!-- window.fetch pollyfill for IE/Edge & Older Chrome/FireFox -->
+  <script src="bower_components/fetch/fetch.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
