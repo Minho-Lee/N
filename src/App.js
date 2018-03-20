@@ -25,7 +25,7 @@ class App extends Component {
 					<Sider
 						collapsible
 						collapsed={this.state.collapsed}
-						onCollapse={this.onCollapse}
+						trigger={null}
 					>
 						<div className="logo" />
 						<Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
@@ -58,9 +58,15 @@ class App extends Component {
 							</Menu.Item>
 						</Menu>
 					</Sider>
+
+						
 					<Layout>
 						<Header>Header</Header>
-						<Content>Content</Content>
+						<Content>
+							<div style={{height: '1000px'}} >
+								HI
+							</div>
+						</Content>
 						<Footer>Footer</Footer>
 					</Layout>
 				</Layout>
