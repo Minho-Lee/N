@@ -1,0 +1,18 @@
+.anticon {
+  font-size: 1.5em; }
+
+.player-button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  transition: all 0.5s; }
+
+.player-button:hover,
+.player-button:focus,
+.player-button:active {
+  background: none;
+  border-color: none;
+  outline: none; }
+
+.ant-btn-clicked {
+  border-color: none; }
